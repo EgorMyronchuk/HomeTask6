@@ -6,12 +6,14 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public abstract class Pet {
-    private Species species = Species.UNKNOWN;
+    private Species species ;
     private String nickname;
     private int age;
     private int trickLevel;
     private String[] habits;
     private Family family;
+
+    {this.species = Species.UNKNOWN;}
 
     @Override
     public boolean equals(Object o) {

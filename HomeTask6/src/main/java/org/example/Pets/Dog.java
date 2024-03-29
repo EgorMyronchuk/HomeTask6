@@ -1,12 +1,14 @@
 package HomeTask6.src.main.java.org.example.Pets;
 
 public class Dog extends Pet implements Fouling {
-    private final Species species = Species.Dog;
+
     public Dog( String nickname) {
         super(  nickname);
+        this.setSpecies(Species.Dog);
     }
     public Dog( String nickname, int age, int trickLevel, String[] habits) {
         super( nickname , age , trickLevel , habits);
+        this.setSpecies(Species.Dog);
     }
     @Override
     public void respond() {
